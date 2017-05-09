@@ -33,7 +33,6 @@ public class AppStarter {
             serviceIntent.setClassName(context, packageName + "." + className);
             serviceIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             serviceIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            serviceIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             serviceIntent.putExtra("cdvStartInBackground",true);
             context.startActivity(serviceIntent);
         }
